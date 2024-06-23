@@ -18,10 +18,9 @@ export default {
     clickEvent() {
       axios.get('/api/test')
      .then(res => {
-      console.log(response.data);
-      this.initText = response.data;
-    }
-    )
+        console.log(res.data);
+        this.initText = res.data;
+      })
     }
   }
 }
