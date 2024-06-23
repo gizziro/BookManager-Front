@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This is 젖탱이</h1>
     <input v-model="initText"></input>
     <button @click="clickEvent">click</button>
   </div>
@@ -17,7 +17,11 @@ export default {
   methods : {
     clickEvent() {
       axios.get('/api/test')
-     .then(res => {this.initText = res.text})
+     .then(res => {
+      console.log(res.text);
+      this.initText = res.text;
+    }
+    )
     }
   }
 }
