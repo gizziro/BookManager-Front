@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is 젖탱이</h1>
+    <h1>This is First Program</h1>
     <input v-model="initText"></input>
     <button @click="clickEvent">click</button>
   </div>
